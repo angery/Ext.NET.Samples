@@ -68,13 +68,17 @@
     <Content Include="App_Readme\Transformer.NET.README.txt" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
-    <Content Include="Views\ExtNet\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\ExtNetModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ExtNet\Index.cshtml">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
