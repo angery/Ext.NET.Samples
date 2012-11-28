@@ -23,7 +23,7 @@ namespace Ext.Net.MVC.Sample
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "ExtNet", action = "ExtNetIndex", id = UrlParameter.Optional } // Parameter defaults
+                new { controller = "ExtNet", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
 
         }
