@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ext.Net.WebForm.Sample", "Ext.Net.WebForm.Sample\Ext.Net.WebForm.Sample.csproj", "{498116B9-047A-4059-A48A-6DD0F02EEEEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{498116B9-047A-4059-A48A-6DD0F02EEEEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498116B9-047A-4059-A48A-6DD0F02EEEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498116B9-047A-4059-A48A-6DD0F02EEEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498116B9-047A-4059-A48A-6DD0F02EEEEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
