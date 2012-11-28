@@ -1,0 +1,39 @@
+﻿@model Ext.Net.MVC.Sample.Models.SampleModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Ext.NET MVC v2 Example</title>    
+</head>
+<body>
+    @Html.X().ResourceManager()
+
+    <a href="http://www.ext.net/"><img src="http://speed.ext.net/identity/extnet-logo-small.png" alt="" /></a>
+
+    @(Html.X().Window()
+        .Title(Model.WindowTitle)
+        .Height(215)
+        .Width(350)
+        .BodyPadding(5)
+        .DefaultButton("0")
+        .Layout("anchor")
+        .DefaultAnchor("100%")
+        .Items(Html.X().TextArea()
+            .ID("TextArea1")
+            .EmptyText(Model.TextAreaEmptyText)
+            .FieldLabel("Message")
+            .Height(85)
+        )
+        .Buttons(Html.X().Button()
+            .Text("Submit")
+            .Icon(Icon.Accept)
+            .DirectEvents(directEvents =>
+            {
+                directEvents.Click.Url = Url.Action("SampleAction");
+                directEvents.Click.ExtraParams.Add(new Parameter("msg", "#{TextArea1}.getValue()", ParameterMode.Raw));
+            })
+        )
+    )
+</body>
+</html>
