@@ -68,7 +68,7 @@
     <Content Include="App_Readme\Transformer.NET.README.txt" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
-    <Content Include="Views\ExtNet\ExtNetIndex.cshtml" />
+    <Content Include="Views\ExtNet\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

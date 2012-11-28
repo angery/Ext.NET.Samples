@@ -5,7 +5,7 @@ namespace Ext.Net.MVC.Sample.Controllers
 {
     public class ExtNetController : Controller
     {
-        public ActionResult ExtNetIndex()
+        public ActionResult Index()
         {
             ExtNetModel sm = new ExtNetModel()
             {
