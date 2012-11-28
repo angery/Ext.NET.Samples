@@ -3,11 +3,11 @@ using Ext.Net.MVC.Sample.Models;
 
 namespace Ext.Net.MVC.Sample.Controllers
 {
-    public class SampleController : Controller
+    public class ExtNetController : Controller
     {
-        public ActionResult Index()
+        public ActionResult ExtNetIndex()
         {
-            SampleModel sm = new SampleModel()
+            ExtNetModel sm = new ExtNetModel()
             {
                 WindowTitle = "Welcome to Ext.NET 2",
                 TextAreaEmptyText = ">> Enter a Message Here <<"

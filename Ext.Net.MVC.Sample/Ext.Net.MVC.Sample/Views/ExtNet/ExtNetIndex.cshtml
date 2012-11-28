@@ -1,0 +1,39 @@
+﻿@model Ext.Net.MVC.Sample.Models.ExtNetModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Ext.Net.MVC Example</title>    
+</head>
+<body>
+    @Html.X().ResourceManager()
+
+    <a href="http://www.ext.net/"><img src="http://speed.ext.net/identity/extnet-logo-small.png" alt="" /></a>
+
+    @(Html.X().Window()
+        .Title(Model.WindowTitle)
+        .Height(215)
+        .Width(350)
+        .DefaultButton("Button1")
+        .Layout("fit")
+        .Items(Html.X().FormPanel()
+            .DefaultAnchor("100%")
+            .BodyPadding(5)
+            .Frame(true)
+            .Items(Html.X().TextArea()
+                .Name("msg")
+                .EmptyText(Model.TextAreaEmptyText)
+                .FieldLabel("Message")
+                .Height(85)
+            )
+            .Buttons(Html.X().Button()
+                .ID("Button1")
+                .Text("Submit")
+                .Icon(Icon.Accept)
+                .DirectClickAction("SampleAction")
+            )
+        )
+    )
+</body>
+</html>
