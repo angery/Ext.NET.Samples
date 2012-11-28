@@ -7,22 +7,22 @@ namespace Ext.Net.MVC.Sample.Controllers
     {
         public ActionResult ExtNetIndex()
         {
-            ExtNetModel sm = new ExtNetModel()
+            ExtNetModel model = new ExtNetModel()
             {
                 WindowTitle = "Welcome to Ext.NET 2",
                 TextAreaEmptyText = ">> Enter a Message Here <<"
             };
 
-            return View(sm);
+            return this.View(model);
         }
 
-        public ActionResult SampleAction(string msg)
+        public ActionResult SampleAction(string message)
         {
             X.Msg.Notify(new NotificationConfig
             {
                 Icon = Icon.Accept,
                 Title = "Working",
-                Html = msg
+                Html = message
             }).Show();
 
             return this.Direct();
